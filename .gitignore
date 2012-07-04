@@ -4,3 +4,9 @@
 *.jar
 *.war
 *.ear
+
+# Local Config Files #
+config/*.json
+
+# Database Seed Data #
+db/seed/*

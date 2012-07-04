@@ -1,4 +1,4 @@
-old-brokerage-tools
+legacy-brokerage-tools
 ===================
 
-Older version of brokerage tools project.
+Legacy version of the brokerage tools project.

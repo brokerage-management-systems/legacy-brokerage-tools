@@ -1,0 +1,14 @@
+{
+    "":"",
+    "":""
+}
+
+    <appSettings>
+        <fileDir>./test/inputs/</fileDir>
+        <datFileName>test.dat</datFileName>
+        <outputFileName>test.csv</outputFileName>
+        <zipFileBaseName>test</zipFileBaseName>
+        <backupLocation1>./test/outputs/</backupLocation1>
+        <backupLocation2>./test/outputs/</backupLocation2>
+        <yesterdaysDat>./test/outputs/</yesterdaysDat>
+    </appSettings>

@@ -1,0 +1,40 @@
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+
+ALTER TABLE `brokers` ADD INDEX idx_brokers_active (`active`);
+ALTER TABLE `broker_joint_entities` ADD INDEX idx_broker_joint_entities_active (`active`);
+ALTER TABLE `broker_override_entities` ADD INDEX idx_broker_override_entities_active (`active`);
+ALTER TABLE `broker_payroll_override_submissions` ADD INDEX idx_broker_payroll_override_submissions_broker_id (`broker_id`);
+ALTER TABLE `broker_payroll_override_submissions` ADD INDEX idx_broker_payroll_override_submissions_commission_month (`commission_month`);
+ALTER TABLE `broker_payroll_payout_submissions` ADD INDEX idx_broker_payroll_payout_submissions_broker_id (`broker_id`);
+ALTER TABLE `broker_payroll_payout_submissions` ADD INDEX idx_broker_payroll_payout_submissions_commission_month (`commission_month`);
+ALTER TABLE `broker_payroll_submissions` ADD INDEX idx_broker_payroll_submissions_broker_id (`broker_id`);
+ALTER TABLE `broker_payroll_submissions` ADD INDEX idx_broker_payroll_submissions_commission_month (`commission_month`);
+ALTER TABLE `broker_sales_assistants` ADD INDEX idx_broker_sales_assistants_broker_id (`broker_id`);
+ALTER TABLE `employees` ADD INDEX idx_employees_active (`active`);
+ALTER TABLE `employees` ADD INDEX idx_employees_employee_id (`employee_id`);
+ALTER TABLE `expenses` ADD INDEX idx_expenses_broker_id (`broker_id`);
+ALTER TABLE `expenses` ADD INDEX idx_expenses_commission_month (`commission_month`);
+ALTER TABLE `holiday_dates` ADD INDEX idx_holiday_dates_commission_month (`commission_month`);
+ALTER TABLE `report_fbnr074p` ADD INDEX idx_report_fbnr074p_broker_id (`broker_id`);
+ALTER TABLE `report_fbnr074p` ADD INDEX idx_report_fbnr074p_commission_month (`commission_month`);
+ALTER TABLE `sales_assistants` ADD INDEX idx_sales_assistants_active (`active`);
+ALTER TABLE `sales_assistant_payroll_data_submissions` ADD INDEX idx_sales_assistant_payroll_data_submissions_commission_month (`commission_month`);
+ALTER TABLE `sales_assistant_payroll_data_submissions` ADD INDEX idx_sales_assistant_payroll_data_submissions_sales_assistant_id (`sales_assistant_id`);
+ALTER TABLE `special_payroll_items` ADD INDEX idx_special_payroll_items_broker_id (`broker_id`);
+ALTER TABLE `special_payroll_items` ADD INDEX idx_special_payroll_items_commission_month (`commission_month`);
+ALTER TABLE `static_special_payroll_item_categories` ADD INDEX idx_static_special_payroll_item_categories_category (`category`);
+ALTER TABLE `static_expense_categories` ADD INDEX idx_static_expense_categories_category (`category`);
+ALTER TABLE `telemarketers` ADD INDEX idx_telemarketers_active (`active`);
+ALTER TABLE `telemarketers` ADD INDEX idx_telemarketers_telemarketer_id (`telemarketer_id`);
+ALTER TABLE `trade_revenue_trade_date_trailer` ADD INDEX idx_trade_revenue_trade_date_trailer_run_date (`run_date`);
+ALTER TABLE `trade_revenue_trade_date` ADD INDEX idx_trade_revenue_trade_date_trade_date_01 (`trade_date_01`);
+ALTER TABLE `trade_revenue_trade_date` ADD INDEX idx_trade_revenue_trade_date_settlement_date_01 (`settlement_date_01`);
+ALTER TABLE `trade_revenue_trade_date` ADD INDEX idx_trade_revenue_trade_date_branch_01_a (`branch_01_a`);
+ALTER TABLE `trade_revenue_trade_date` ADD INDEX idx_trade_revenue_trade_date_account_number_01 (`account_number_01`);
+ALTER TABLE `trade_revenue_trade_date` ADD INDEX idx_trade_revenue_trade_date_run_date_01 (`run_date_01`);
+ALTER TABLE `trade_revenue_trade_date` ADD INDEX idx_trade_revenue_trade_date_trade_reference_number_01 (`trade_reference_number_01`);
+ALTER TABLE `trade_revenue_trade_date` ADD INDEX idx_trade_revenue_trade_date_symbol_02 (`symbol_02`);
+ALTER TABLE `trade_revenue_trade_date` ADD INDEX idx_trade_revenue_trade_date_registered_rep_owning_rep_rr_09 (`registered_rep_owning_rep_rr_09`);
+ALTER TABLE `trade_revenue_trade_date` ADD INDEX idx_trade_revenue_trade_date_trade_definition_trade_id_12 (`trade_definition_trade_id_12`);
+
